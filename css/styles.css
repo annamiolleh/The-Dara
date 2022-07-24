@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after, .clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+header {
+  padding-top: 44px;
+  padding-bottom: 80px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  padding-right: 50px;
+}
+
+:last-child {
+  padding-right: 0px;
+}
+
+.menu__link {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #C7C7C7;
+}
+
+@font-face {
+  font-family: PoppinsRegular, sans-serif;
+  src: url("../fonts/Poppins/PoppinsRegular/PoppinsRegular.ttf");
+}
+@font-face {
+  font-family: PoppinsMedium, sans-serif;
+  src: url("../fonts/Poppins/PoppinsMedium/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueRegular.ttf");
+}
+@font-face {
+  font-family: "Helvetica Neue Woff";
+  src: url("../fonts/HelveticaNeue/HelveticaNeueRegular.woff");
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("../fonts/NeueHaasGroteskDisplayPro/NeueHaasDisplayMedium/NeueHaasDisplayMedium.ttf");
+}
+body {
+  height: 100%;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 17px;
+  background: url(../images/background.png), linear-gradient(#141414, #131313);
+  background-repeat: repeat;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  max-width: 1232px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}/*# sourceMappingURL=styles.css.map */

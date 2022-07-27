@@ -35,3 +35,7 @@
 	-webkit-touch-callout: none;
 	user-select: none;
 }
+
+@mixin hightlight {
+	-webkit-tap-highlight-color: transparent; 
+}

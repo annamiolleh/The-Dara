@@ -13,6 +13,7 @@
         @include hightlight
     }
 }
+
 .menu {
     &__list{
         display: flex;
@@ -22,17 +23,17 @@
         padding-right: 50px;
     }
     
-    &:last-child {
+    &__item:last-child {
         padding-right: 0px;
     }
     
     &__link{
         position: relative;
-        font-family: 'Helvetica Neue';
+        font-family: $nav-text;
         font-weight: 400;
         font-size: 16px;
         line-height: 125%;
-        color: #C7C7C7;     
+        color: $hover-nav;     
         
         &::before {
             content: '';
@@ -42,7 +43,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-bottom: 1px solid #C7C7C7;
+            border-bottom: 1px solid $hover-nav;
             opacity: 0%;
             transition: 1.5s;
         }
@@ -76,51 +77,8 @@
 }
 
 .small-menu{
-    // display: none;
-    width: 53px;
-    height: 20px;
-    position: relative;
-    transition: 3s;
-    perspective: 1000px;
-    
-    &__on, &__off {
-        font-family: 'Poppins';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 109%;
-        color: #C7C7C7;
-        display: block;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 2s;
-        backface-visibility: hidden;
-    }
-
-    &__off{
-        transform: rotateY(180deg);
-
-    }
-
-    &:hover{
-        transition: 1s;
-
-            .small-menu__on{
-                transform: rotateY(180deg);
-            }
-
-            .small-menu__off{
-                transform: rotateY(360deg);
-            }
-
-    } 
-       
-}
+    display: none;
+ }
 
 
 

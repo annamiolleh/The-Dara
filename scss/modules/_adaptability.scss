@@ -1,16 +1,22 @@
-//Tablet adaptive 768 px
+
+// 210 - 767 (mobile styles)
 @media screen and (min-width: 210px) and (max-width: 768px) {
     [class*="__container"] {
         max-width: 608px;
     }
+    
+    .menu__list{
+        display: none;
+    }
 
-    .small-menu{
+    .menu-button{
         display: block;
         width: 53px;
         height: 20px;
         position: relative;
         transition: 3s;
         perspective: 1000px;
+
         
         &__on, &__off {
             font-family: $text-headings;
@@ -30,84 +36,97 @@
             transition: 2s;
             backface-visibility: hidden;
         }
+
+        &__on {
+            &--active { 
+                transform: rotateY(180deg);
+            }
+        }
     
         &__off{
             transform: rotateY(180deg);
+            &--active { 
+                transform: rotateY(360deg);
+            }
     
         }
-    
-        &:hover{
-            transition: 1s;
-    
-                .small-menu__on{
-                    transform: rotateY(180deg);
-                }
-    
-                .small-menu__off{
-                    transform: rotateY(360deg);
-                }
-    
-        } 
-           
     }
 
     .header{
-        padding-top: 48px;
-    }
-
-    .menu{
-        overflow: auto;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        padding: 410px 0px 0px 0px;
-    }
-
-    .menu__list{
+        &__logo {
         display: block;
+        }
+
+        &__container {
+            background: url(../images/background.png);
+            background-color: #171717;
+            background-repeat: repeat;   
+        }
     }
 
-    .menu__item{
-        margin-bottom: 35px;
-        padding-right: 0px;
-    }
+    .small-menu{
+        display: none;
 
-    .menu__link{
-    font-family: $text-headings;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 104%;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: $menu-link;
-    }
+        &--active {
+            display: block;
+            background: url(../images/background.png);
+            background-color: #171717;
+            background-repeat: repeat;
+            height: 100%;
+        }
 
+        &__container{
+            width: 100%;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 80px;
+            margin: 0 auto;
+        }
+
+        &__item{
+            margin-bottom: 35px;
+            padding-right: 0px;
+        }
+
+        &__list{
+            display: block;
+        }
+    
+        &__link{
+        font-family: $text-headings;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 104%;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: $menu-link;
+        }
+    }
 }
 
-//Mobile adaptive 360 px
-@media screen and (min-width: 290px) and (max-width: 424px){
+//1920 - 2559 (2k skreen / high desktop styles)
+@media (min-width: 1920px) and (max-width: 2559px){
     [class*="__container"] {
-        max-width: 320px;
+        max-width: 1544px;
     }
-
+    
     .header{
-        padding-top: 23px;
+        padding-top: 74px;
+        padding-bottom: 100px;
     }
-
-    .menu{
-        padding: 253px 0px 0px 0px;
-    }
-
 }
 
-@media screen and (min-width: 210px) and (max-width: 289px){
+//Speacial extension
+
+@media screen and (min-width: 210px) and (max-width: 290px){
     .header{
         padding-top: 20px;
     }
 
     .menu{
-        padding: 153px 0px 0px 0px;
+        padding: 150px 20px 0px 20px;
         overflow: hidden;
     }
 
@@ -125,22 +144,41 @@
 
 }
 
-
-/* PC */
-@media screen and (min-width: 769px) and (max-width: 1023px){
+@media screen and (min-width: 290px) and (max-width: 426px){
     [class*="__container"] {
-        max-width: 870px;
+        max-width: 400px;
     }
-}
 
-//.K screen 1920px
-@media (min-width: 1920px) {
-    [class*="__container"] {
-        max-width: 1544px;
-    }
-    
     .header{
-        padding-top: 74px;
-        padding-bottom: 100px;
+        &__container{
+            margin: 20px;
+            padding: 0px;
+        }
+
+        &__logo {
+            width: 152px;
+            height: 14px;
+        }
+    }
+
+    .small-menu {
+        &__container {
+            margin-left: 5px;
+            padding-bottom: 5px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-button {
+        &__on, &__off {
+            font-size: 19px;
+        }
     }
 }
+
+
+
+

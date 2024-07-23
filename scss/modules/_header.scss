@@ -1,8 +1,11 @@
 // Header section
 
 .header{
-    padding-top: 44px;
-    padding-bottom: 80px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in;
 
     &__container{
         display: flex;
@@ -12,6 +15,20 @@
         @include unselectable;
         @include hightlight
     }
+
+    &__logo img{
+        max-width: 100%;
+        display: block;
+    }
+
+    &--active {
+        height: calc(100% - 60px);
+    }
+}
+
+.header__container{
+    padding-top: 44px;
+    padding-bottom: 40px;
 }
 
 .menu {
@@ -33,7 +50,8 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 125%;
-        color: $hover-nav;     
+        color: $hover-nav;
+        padding: 3px;     
         
         &::before {
             content: '';
@@ -76,9 +94,13 @@
 
 }
 
-.small-menu{
+.menu-button{
     display: none;
- }
+}
+
+.small-menu__list{
+    display: none;
+}
 
 
 

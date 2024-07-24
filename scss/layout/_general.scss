@@ -21,6 +21,23 @@ body{
     padding: 0px 15px;
 }
 
+h1 {
+    font-family: $text-headings;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 100%;
+    color: $header1-4;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $body-text;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 158%;
+    color: $text;
+}
+
 // Fonts
 @font-face {
     font-family: PoppinsRegular, sans-serif;

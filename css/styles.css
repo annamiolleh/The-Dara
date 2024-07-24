@@ -78,6 +78,23 @@ body {
   padding: 0px 15px;
 }
 
+h1 {
+  font-family: "PoppinsRegular", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 158%;
+  color: #BDBDBD;
+}
+
 @font-face {
   font-family: PoppinsRegular, sans-serif;
   src: url("../fonts/Poppins/PoppinsRegular/PoppinsRegular.ttf");
@@ -127,6 +144,9 @@ body {
 .header__container {
   padding-top: 44px;
   padding-bottom: 40px;
+  background: url(../images/background.png);
+  background-color: #171717;
+  background-repeat: repeat;
 }
 
 .menu__list {
@@ -186,6 +206,55 @@ body {
   display: none;
 }
 
+.intro {
+  margin-top: 144px;
+}
+.intro__info {
+  display: flex;
+  flex-direction: column;
+}
+.intro__pic {
+  display: none;
+}
+
+.intro-block {
+  display: flex;
+  flex-direction: column;
+}
+.intro-block__first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.intro-block__second {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.intro-block__third {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.intro-block__text {
+  text-align: right;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 158%;
+  color: #BDBDBD;
+}
+.intro-block__tablet {
+  display: none;
+}
+
+.intro-pic__wrapper img {
+  width: 100%;
+  display: block;
+}
+
 @media screen and (min-width: 210px) and (max-width: 768px) {
   [class*=__container] {
     max-width: 608px;
@@ -228,13 +297,13 @@ body {
   .menu-button__off--active {
     transform: rotateY(360deg);
   }
-  .header__logo {
-    display: block;
-  }
-  .header__container {
+  .header {
     background: url(../images/background.png);
     background-color: #171717;
     background-repeat: repeat;
+  }
+  .header__logo {
+    display: block;
   }
   .small-menu {
     display: none;
@@ -271,14 +340,60 @@ body {
     text-transform: uppercase;
     color: #E4E4E4;
   }
+  h1 {
+    font-size: 48px;
+    line-height: 104%;
+  }
+  .intro {
+    margin-top: 134px;
+    width: 100%;
+  }
+  .intro__pic {
+    display: block;
+    width: 100%;
+    height: 969px;
+    background: url("/images/intro.webp") center no-repeat;
+    overflow: hidden;
+    background-size: cover;
+  }
+  .intro-block {
+    margin-bottom: 25px;
+  }
+  .intro-block__first {
+    display: none;
+  }
+  .intro-block__second {
+    display: none;
+  }
+  .intro-block__third {
+    display: none;
+  }
+  .intro-block__text {
+    display: none;
+  }
+  .intro-block__tablet {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .intro-pic {
+    display: none;
+  }
 }
-@media (min-width: 1920px) and (max-width: 2559px) {
+@media (min-width: 1920px) and (max-width: 3000px) {
   [class*=__container] {
     max-width: 1544px;
   }
   .header {
-    padding-top: 74px;
-    padding-bottom: 100px;
+    background: url(../images/background.png);
+    background-color: #171717;
+    background-repeat: repeat;
+  }
+  h1 {
+    font-size: 105px;
+    line-height: 83%;
+  }
+  .intro {
+    margin-top: 174px;
   }
 }
 @media screen and (min-width: 210px) and (max-width: 290px) {
@@ -303,9 +418,15 @@ body {
   [class*=__container] {
     max-width: 400px;
   }
+  .header h1 {
+    font-size: 40px;
+  }
   .header__container {
     margin: 20px;
     padding: 0px;
+    background: url(../images/background.png);
+    background-color: #171717;
+    background-repeat: repeat;
   }
   .header__logo {
     width: 152px;
@@ -320,5 +441,32 @@ body {
   }
   .menu-button__on, .menu-button__off {
     font-size: 19px;
+  }
+  .intro-block__tablet p {
+    display: inline;
+  }
+  .intro-block__tablet h1 {
+    display: inline-block;
+  }
+  .intro {
+    margin-top: 100px;
+  }
+  .intro__pic {
+    height: 505px;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1140px) {
+  h1 {
+    font-size: 70px;
+    line-height: 104%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  h1 {
+    font-size: 50px;
+  }
+  .intro-block__text p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=styles.css.map */

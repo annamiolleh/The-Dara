@@ -1,0 +1,62 @@
+// Intro section
+
+.intro {
+    margin-top: 144px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__pic {
+        display: none;
+    }
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+
+    &__first {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__second {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    &__third {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+
+    &__text {
+        text-align: right;
+        font-family: $body-text;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 158%;
+        color: $text;   
+    }
+
+    &__tablet {
+        display: none;
+    }
+}
+
+.intro-pic {
+
+    &__wrapper {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}

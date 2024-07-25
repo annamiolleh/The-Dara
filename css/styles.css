@@ -78,13 +78,21 @@ body {
   padding: 0px 15px;
 }
 
-h1 {
+h1, h2 {
   font-family: "PoppinsRegular", sans-serif;
   font-weight: 500;
-  font-size: 80px;
-  line-height: 100%;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 68px;
+  line-height: 102%;
 }
 
 p {
@@ -255,6 +263,76 @@ p {
   display: block;
 }
 
+.about {
+  margin-top: 170px;
+}
+
+.about-section__elem-tablet {
+  display: none;
+}
+
+.about-section__block--margin {
+  margin-bottom: 170px;
+  margin-left: 23%;
+}
+.about-section__title {
+  margin-bottom: 70px;
+}
+.about-section__list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 39px;
+       column-gap: 39px;
+  margin-bottom: 75px;
+}
+.about-section__item {
+  flex-basis: 29%;
+  display: flex;
+}
+.about-section__item::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #BDBDBD;
+  margin-left: 10%;
+}
+.about-section__item:last-child::after {
+  display: none;
+}
+.about-section__number {
+  margin-bottom: 30px;
+}
+.about-section__story {
+  margin-left: 36%;
+}
+.about-section__paragraph {
+  margin-bottom: 35px;
+}
+.about-section__logo {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 125%;
+}
+.about-section__block--position {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 118px;
+       column-gap: 118px;
+}
+.about-section__elem img {
+  width: 100%;
+  display: block;
+}
+.about-section__elem-wrapper {
+  margin-bottom: 134px;
+}
+.about-section__elem-text {
+  width: 61%;
+}
+
 @media screen and (min-width: 210px) and (max-width: 768px) {
   [class*=__container] {
     max-width: 608px;
@@ -352,7 +430,7 @@ p {
     display: block;
     width: 100%;
     height: 969px;
-    background: url("/images/intro.webp") center no-repeat;
+    background: url("../images/intro.webp") center no-repeat;
     overflow: hidden;
     background-size: cover;
   }
@@ -377,6 +455,64 @@ p {
   }
   .intro-pic {
     display: none;
+  }
+  .about {
+    margin-top: 140px;
+  }
+  .about-section h2 {
+    font-size: 40px;
+    line-height: 112%;
+  }
+  .about-section__block--margin {
+    margin-bottom: 140px;
+    margin-left: 0;
+  }
+  .about-section__story {
+    margin-left: 0;
+  }
+  .about-section__number {
+    margin-bottom: 18px;
+  }
+  .about-section__list {
+    flex-wrap: wrap;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    margin-bottom: 35px;
+  }
+  .about-section__item::after {
+    display: none;
+    margin-bottom: 25px;
+  }
+  .about-section__item--1 {
+    flex-basis: 47%;
+    margin-right: 3%;
+  }
+  .about-section__item--2 {
+    flex-basis: 47%;
+    margin-left: 3%;
+  }
+  .about-section__item--3 {
+    flex-basis: 100%;
+    margin-top: 5%;
+  }
+  .about-section__item-wrapper {
+    margin-bottom: 25px;
+  }
+  .about-section__block--position {
+    display: none;
+  }
+  .about-section__elem-tablet {
+    display: block;
+  }
+  .about-section__elem-tablet img {
+    display: block;
+    width: 100%;
+  }
+  .about-section__elem-tablet p {
+    margin-top: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 50%;
   }
 }
 @media (min-width: 1920px) and (max-width: 3000px) {
@@ -455,6 +591,54 @@ p {
     height: 505px;
     background-size: cover;
   }
+  .about {
+    margin-top: 90px;
+  }
+  .about-section__block--margin {
+    margin-bottom: 90px;
+  }
+  .about-section__title {
+    margin-bottom: 30px;
+  }
+  .about-section__list {
+    display: block;
+  }
+  .about-section__item {
+    display: block;
+  }
+  .about-section__item::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-left: 0;
+  }
+  .about-section__item:last-child::after {
+    display: block;
+  }
+  .about-section__item--1 {
+    margin-right: 0;
+  }
+  .about-section__item--2 {
+    margin-left: 0;
+  }
+  .about-section__story::before {
+    content: "04";
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 158%;
+    color: #BDBDBD;
+    margin-bottom: 18px;
+  }
+  .about-section__paragraph {
+    margin-top: 25px;
+  }
+  .about-section__elem-tablet p {
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 88%;
+  }
 }
 @media screen and (min-width: 990px) and (max-width: 1140px) {
   h1 {
@@ -468,5 +652,20 @@ p {
   }
   .intro-block__text p {
     font-size: 14px;
+  }
+  .about {
+    margin-top: 140px;
+    margin-bottom: 90px;
+  }
+  .about-section h2 {
+    font-size: 40px;
+    line-height: 112%;
+  }
+  .about-section__block--margin {
+    margin-bottom: 140px;
+    margin-left: 15%;
+  }
+  .about-section__story {
+    margin-left: 28%;
   }
 }/*# sourceMappingURL=styles.css.map */

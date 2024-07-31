@@ -227,7 +227,63 @@
         }
     }
 
+    .releases {
+        margin-top: 90px;
+
+        &__title {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .swiper {
+        display: block;
+        width: 100%;
+      }
+    
+      .swiper-wrapper {
+        max-width: 100%;
+      }
+    
+      .swiper-slide {
+        &__description {
+            justify-content: space-between;
+        }
+
+        &__elem {
+            width: 100%;
+            img {
+               display: block;
+               max-width: 100%; 
+            }
+        }
+
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+            min-height: 190px;
+        }
+
+        &__details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+    }
+
+    .desktop {
+        &__block {
+            display: none;
+        }
+    }
+
 }
+// -------------------------------The end of the 210 - 767 (mobile styles)----------------------------
+
 
 //1920 - 2559 (2k skreen / high desktop styles)
 @media (min-width: 1920px) and (max-width: 3000px){
@@ -236,12 +292,9 @@
     }
     
     .header{
-        // padding-top: 74px;
-        // padding-bottom: 100px;
         background: url(../images/background.png);
         background-color: #171717;
         background-repeat: repeat;
-
     }
 
     h1 {
@@ -253,7 +306,9 @@
         margin-top: 174px;
     }
 
-    
+    .test {
+        padding-bottom: 50px;
+    }
 }
 
 //Speacial extension
@@ -288,16 +343,10 @@
     }
 
     .header {
+        padding: 20px;
+
         h1 {
             font-size: 40px;
-        }
-
-        &__container {
-            margin: 20px;
-            padding: 0px;
-            background: url(../images/background.png);
-            background-color: #171717;
-            background-repeat: repeat;
         }
         
         &__logo {
@@ -411,6 +460,29 @@
             width: 88%;
         }
     }
+
+    .releases {
+        margin-top: 50px; 
+
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .swiper-slide {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 15px;
+            line-height: 162%;
+        }
+
+        &__details {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1140px){
@@ -452,5 +524,121 @@
         }
     }
 }
+
+@media screen and (min-width: 767.98px) and (max-width: 1025px) {
+    .swiper {
+        display: block;
+    }
+
+    .desktop {
+        &__block {
+            display: none;
+        }
+    }
+
+    .releases__container--custom {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .swiper-slide {
+        &__elem {
+            width: 100%;
+            img {
+               display: block;
+               max-width: 100%; 
+            }
+        }
+
+        &__title {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            margin-bottom: 40px;
+            min-height: 107px;
+        }
+
+        &__details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+    .releases {
+        &__container--custom {
+            max-width: 1202px;
+            margin: 0px auto;
+            padding: 0px 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .desktop {
+        &__elem {
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+        }  
+
+        &__pic {
+            flex-basis: 25%;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &__descr{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 0 1 75%;
+        }
+        
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            flex-basis: 30%;
+        }
+        
+        &__text {
+            flex: 0 1 40%;
+        }
+
+        &__details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__year, &__listen, &__title {
+            font-family: $text-headings;
+            font-weight: 500;
+            color: $header5;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 125%;
+        }
+    }
+}
+
+    
+
+
 
 

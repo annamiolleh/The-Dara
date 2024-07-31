@@ -6,6 +6,12 @@
     left: 0;
     top: 0;
     transition: 0.3s ease-in;
+    padding-top: 44px;
+    padding-bottom: 40px;
+    background: url(../images/background.png);
+    background-color: #171717;
+    background-repeat: repeat;
+    z-index: 50;
 
     &__container{
         display: flex;
@@ -24,14 +30,6 @@
     &--active {
         height: calc(100% - 60px);
     }
-}
-
-.header__container{
-    padding-top: 44px;
-    padding-bottom: 40px;
-    background: url(../images/background.png);
-    background-color: #171717;
-    background-repeat: repeat;
 }
 
 .menu {

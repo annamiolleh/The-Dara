@@ -30,15 +30,6 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 1.5,
             spaceBetween: 40,
         },
-
-        // 1025: {
-        //     enabled: false,
-        //     slidesPerView: 6,
-        //     direction: 'vertical',
-        //     allowTouchMove: false,
-        //     pagination: false,
-            
-        // }
       }
   });
 

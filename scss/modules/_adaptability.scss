@@ -281,6 +281,18 @@
         }
     }
 
+    .kult {
+        &__title {
+            font-size: 40px;
+            line-height: 112%;
+            margin-bottom: 50px;
+        }
+
+        &__wrap {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
 }
 // -------------------------------The end of the 210 - 767 (mobile styles)----------------------------
 

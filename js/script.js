@@ -7,11 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function toggleMenu(elem) {
         elem.preventDefault();
+        document.body.classList.toggle('body--lock');
         smallMenu.classList.toggle('small-menu--active');
         menuButtonOn.classList.toggle('menu-button__on--active');
         menuButtonOff.classList.toggle('menu-button__off--active');
-        headerMenu.classList.toggle('header--active')
+        headerMenu.classList.toggle('header--active');
     }
+
 
     // menuButtonOff.addEventListener('click', (event) => {
     //     event.preventDefault();

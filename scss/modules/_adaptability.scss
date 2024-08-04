@@ -5,6 +5,13 @@
         max-width: 608px;
     }
     
+    body {
+        &__lock {
+            overflow: hidden;
+        }
+        
+    }
+
     .menu__list{
         display: none;
     }
@@ -228,7 +235,7 @@
     }
 
     .releases {
-        margin-top: 90px;
+        margin-top: 140px;
 
         &__title {
             font-size: 40px;
@@ -282,6 +289,8 @@
     }
 
     .kult {
+        margin-top: 140px;
+
         &__title {
             font-size: 40px;
             line-height: 112%;
@@ -292,6 +301,79 @@
             flex-direction: column;
             row-gap: 30px;
         }
+    }
+
+    .work {
+        margin-top: 140px;
+        
+    
+        &__title {
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+        
+    }
+    .examples-work {
+        &__wrap {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        &__block--2 {
+            grid-column: span 1;
+            grid-row: auto;
+            min-height: 100%;
+        }
+
+        &__block-pic {
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 40%;
+                left: 43%;
+                width: 74px;
+                height: 74px;
+                background: url('../images/work/play.svg') center no-repeat;
+                 
+            }
+
+            &--big {
+                height: 84%;
+            }
+        }
+    }
+
+    .story-work {
+        margin-top: 140px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 125%;
+            
+        }
+
+        &__year {
+            font-size: 40px;
+            line-height: 112%;
+        }
+
+        &__blocks {
+            row-gap: 50px;
+        }
+    }
+
+    .youtube-player-block {
+        margin-top: 60px;
+    }
+
+    .youtube-player-title {
+        font-size: 40px;
+    }
+
+    .youtube-player-popup {
+        top: 25%;
     }
 }
 // -------------------------------The end of the 210 - 767 (mobile styles)----------------------------
@@ -318,8 +400,18 @@
         margin-top: 174px;
     }
 
-    .test {
-        padding-bottom: 50px;
+    .story-work {
+        &__title {
+            font-size: 48px; 
+        }
+    }
+    
+    .examples-work {
+        &__block-pic {
+            &--big {
+                height: 93.5%;
+            }
+        }
     }
 }
 
@@ -481,6 +573,10 @@
         }
     }
 
+    .kult {
+        margin-top: 90px;
+    }
+
     .swiper-slide {
         &__title {
             margin-bottom: 20px;
@@ -493,6 +589,45 @@
 
         &__details {
             margin-bottom: 30px;
+        }
+    }
+
+    .swiper-pagination-fraction {
+        margin-top: 40px;
+    }
+
+    .work {
+        margin-top: 90px;
+    }
+
+    .examples-work {
+        &__block-pic { 
+            &::before {
+                top: 40%;
+                left: 45%;
+                width: 32px;
+                height: 32px;
+                background: url('../images/work/play-small.svg') center no-repeat;
+            }
+        }
+    }
+
+    .story-work {
+        margin-top: 90px;
+        flex-direction: column;
+
+        &__title {
+            font-size: 40px;
+            line-height: 112%;
+            margin-bottom: 30px;
+        }
+
+        &__blocks {
+            row-gap: 25px;
+        }
+
+        &__year {
+            margin-bottom: 15px;
         }
     }
 }
@@ -576,6 +711,14 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+        }
+    }
+
+    .examples-work {
+        &__block-pic {
+            &--big {
+                height: 90%;
+            }
         }
     }
 }

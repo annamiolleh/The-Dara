@@ -1,0 +1,155 @@
+.work {
+    position: relative;
+
+    margin-top: 170px;
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+}
+
+.examples-work {
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 колонки одинаковой ширины */
+        grid-template-rows: repeat(3, 1fr); /* 3 строки одинаковой высоты */
+        gap: 16px;
+    }
+
+    &__block--2 {
+        // grid-column: span 2; /* занимает 2 колонки */
+        // grid-row: span 2; 
+        grid-column: 2 / 4; /* со 2-го по 3-й столбец (включительно) */
+        grid-row: 2 / 4; /* с 1-й по 2-ю строку (включительно) */
+    }
+
+    &__block {
+        cursor: pointer;
+        
+        h5 {
+            font-family: $text-headings;
+            font-size: 14px;
+            line-height: 142%;
+            margin-bottom: 15px;
+            color: $header1-4;
+            text-transform: uppercase;
+
+            width: 100%; /* Задайте желаемую ширину */
+            overflow: hidden; /* Скрывает содержимое, выходящее за пределы */
+            display: -webkit-box; /* Используется для создания флекс-контейнера с заданным количеством рядков */
+            -webkit-box-orient: vertical; /* Вертикальная ориентация */
+            -webkit-line-clamp: 1; /* Обрезка после двух рядков */
+            line-clamp: 1; /* Для новых стандартов */
+            text-overflow: ellipsis; /* Добавляет многоточие (...) */
+        }
+
+        &:hover {
+            opacity: 0.5;
+            transition: all 0.5s ease;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            ;
+        }    
+    }
+
+    &__block-pic {
+        img {
+            height: 100%
+        }
+        &--big {
+            height: 92%;
+        }
+    }
+
+    .youtube-player-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: #000000;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 400ms ease;
+        z-index: 50;
+    }
+
+    .youtube-player-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .youtube-player-title {
+        display: block;
+        z-index: 51;
+        color: $hover-nav;
+    }
+
+    .youtube-player-close {
+        display: block;
+        background: url(/images/work/video.svg);
+        width: 32px;
+        height: 32px;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    .youtube-player-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .youtube-player-popup {
+        position: fixed;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        transition: all 400ms ease;
+        display: flex;
+        justify-content: center;
+
+        iframe{
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    .youtube-player-overlay.active .youtube-player-popup {
+        transform: translate(-50%, 0%);
+    }
+}
+
+.story-work {
+    margin-top: 170px;
+    display: flex;
+    column-gap: 15px;
+
+    &__title {
+        font-family: $text-headings;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 111%;
+        text-transform: uppercase;
+        color: $header1-4;
+        flex: 0 1 49%;
+    }
+
+    &__blocks {
+        row-gap: 70px;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 50%;
+    }
+
+    &__year {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+    }
+}

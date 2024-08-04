@@ -441,8 +441,8 @@ div.swiper-pagination-fraction {
 
 .examples-work__wrap {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 колонки одинаковой ширины */
-  grid-template-rows: repeat(3, 1fr); /* 3 строки одинаковой высоты */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 16px;
 }
 .examples-work__block--2 {
@@ -459,8 +459,8 @@ div.swiper-pagination-fraction {
   margin-bottom: 15px;
   color: #FFFFFF;
   text-transform: uppercase;
-  width: 100%; /* Задайте желаемую ширину */
-  overflow: hidden; /* Скрывает содержимое, выходящее за пределы */
+  width: 100%;
+  overflow: hidden;
   display: -webkit-box; /* Используется для создания флекс-контейнера с заданным количеством рядков */
   -webkit-box-orient: vertical; /* Вертикальная ориентация */
   -webkit-line-clamp: 1; /* Обрезка после двух рядков */
@@ -504,7 +504,7 @@ div.swiper-pagination-fraction {
 }
 .examples-work .youtube-player-close {
   display: block;
-  background: url(/images/work/video.svg);
+  background: url(../images/work/video.svg);
   width: 32px;
   height: 32px;
   align-self: center;
@@ -556,6 +556,118 @@ div.swiper-pagination-fraction {
   margin-bottom: 20px;
 }
 .story-work__text {
+  margin-bottom: 25px;
+}
+.story-work__text:last-child {
+  margin-bottom: 0px;
+}
+
+.gigs {
+  margin-top: 170px;
+}
+.gigs__title {
+  margin-bottom: 70px;
+}
+.gigs__table {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.table-gigs__decor::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBDBD;
+  margin-top: 40px;
+}
+.table-gigs__decor--up::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBDBD;
+  margin-bottom: 40px;
+}
+.table-gigs__row {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.table-gigs__date {
+  font-size: 68px;
+  font-family: "PoppinsRegular", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 102%;
+  flex-basis: 16%;
+}
+.table-gigs__state {
+  font-size: 24px;
+  font-family: "PoppinsRegular", sans-serif;
+  font-weight: 500;
+  color: #F2F2F2;
+  line-height: 125%;
+  text-transform: uppercase;
+  flex-basis: 35%;
+}
+.table-gigs__place {
+  flex-basis: 27%;
+}
+
+.gigs__location {
+  margin-top: 170px;
+  display: flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  justify-content: space-between;
+}
+
+.location-gigs__info {
+  flex-basis: 49%;
+}
+.location-gigs__title {
+  font-size: 36px;
+  font-family: "PoppinsRegular", sans-serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 111%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.location-gigs__text {
+  display: flex;
+  flex-direction: column;
+}
+.location-gigs__pic {
+  margin-bottom: 15px;
+}
+.location-gigs__pic img {
+  display: block;
+  width: 100%;
+}
+.location-gigs__wrap {
+  flex-basis: 49%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.location-gigs__details p {
+  margin-bottom: 25px;
+}
+.location-gigs__details p:last-child {
+  margin-bottom: 0px;
+}
+.location-gigs__invite {
+  font-size: 24px;
+  font-family: "PoppinsRegular", sans-serif;
+  color: #F2F2F2;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 125%;
   margin-bottom: 25px;
 }
 
@@ -850,6 +962,34 @@ div.swiper-pagination-fraction {
   .youtube-player-popup {
     top: 25%;
   }
+  .gigs {
+    margin-top: 140px;
+  }
+  .gigs__title {
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+  .table-gigs__date {
+    font-size: 40px;
+    flex-basis: 10%;
+  }
+  .table-gigs__state {
+    font-size: 20px;
+  }
+  .table-gigs__place {
+    flex-basis: 40%;
+  }
+  .gigs__location {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+  }
+  .location-gigs__info {
+    margin-bottom: 50px;
+  }
+  .location-gigs__title {
+    margin-bottom: 15px;
+  }
 }
 @media (min-width: 1920px) and (max-width: 3000px) {
   [class*=__container] {
@@ -1023,6 +1163,46 @@ div.swiper-pagination-fraction {
   }
   .story-work__year {
     margin-bottom: 15px;
+  }
+  .gigs {
+    margin-top: 90px;
+  }
+  .gigs__title {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .gigs__table {
+    row-gap: 25px;
+  }
+  .table-gigs__row {
+    flex-direction: column;
+  }
+  .table-gigs__decor::after {
+    margin-top: 25px;
+  }
+  .table-gigs__decor--up::before {
+    margin-bottom: 25px;
+  }
+  .table-gigs__state {
+    display: flex;
+    flex-direction: column;
+  }
+  .gigs__location {
+    margin-top: 90px;
+  }
+  .location-gigs__title {
+    font-size: 24px;
+    display: block;
+  }
+  .location-gigs__text {
+    display: block;
+  }
+  .location-gigs__info {
+    margin-bottom: 40px;
+  }
+  .location-gigs__wrap {
+    row-gap: 40px;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1140px) {

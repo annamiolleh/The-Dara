@@ -375,6 +375,48 @@
     .youtube-player-popup {
         top: 25%;
     }
+
+    .gigs {
+        margin-top: 140px;
+
+        &__title {
+            margin-bottom: 50px;
+            font-size: 40px;
+        }
+    }
+
+    .table-gigs {
+        &__date {
+            font-size: 40px;
+            flex-basis: 10%;
+        }
+
+        &__state {
+            font-size: 20px;
+        }
+
+        &__place {
+            flex-basis: 40%;
+        }
+    }
+
+    .gigs__location {   
+        margin-top: 140px;
+        display: flex;  
+        flex-direction: column;  
+               
+    }
+
+    .location-gigs {
+        &__info {
+            margin-bottom: 50px;
+        }
+        
+
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
 }
 // -------------------------------The end of the 210 - 767 (mobile styles)----------------------------
 
@@ -628,6 +670,66 @@
 
         &__year {
             margin-bottom: 15px;
+        }
+    }
+
+    .gigs {
+        margin-top: 90px;
+
+        &__title {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__table {
+            row-gap: 25px;
+        }
+    }
+
+    .table-gigs {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__decor {
+            &::after {
+                margin-top: 25px;
+            }
+
+            &--up {
+                &::before {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        &__state{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .gigs__location {
+        margin-top: 90px;
+    }
+
+    .location-gigs {
+        &__title {
+            font-size: 24px;
+            display: block;
+        }
+
+        &__text {
+            display: block;
+        }
+
+        &__info {
+            margin-bottom: 40px;
+        }
+
+        &__wrap {
+            row-gap: 40px;
         }
     }
 }

@@ -645,6 +645,9 @@ div.swiper-pagination-fraction {
 .location-gigs__pic {
   margin-bottom: 15px;
 }
+.location-gigs__pic:last-child {
+  margin-bottom: 0px;
+}
 .location-gigs__pic img {
   display: block;
   width: 100%;
@@ -669,6 +672,60 @@ div.swiper-pagination-fraction {
   font-weight: 500;
   line-height: 125%;
   margin-bottom: 25px;
+}
+
+.review {
+  margin-top: 170px;
+}
+.review__title {
+  margin-bottom: 70px;
+}
+.review__wrap {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-bottom: 40px;
+}
+.review__wrap--2 {
+  flex-direction: row-reverse;
+}
+.review__decor::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #BDBDBD;
+  margin-bottom: 40px;
+}
+.review__pic-wrap {
+  flex-basis: 50%;
+}
+.review__pic-wrap img {
+  display: block;
+  width: 100%;
+}
+.review__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+  margin-right: 25%;
+}
+.review__name {
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 111%;
+  color: #F2F2F2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.review__place {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 17px;
+  line-height: 117%;
+  font-weight: 500;
+  color: #F2F2F2;
 }
 
 @media screen and (min-width: 210px) and (max-width: 768px) {
@@ -990,6 +1047,27 @@ div.swiper-pagination-fraction {
   .location-gigs__title {
     margin-bottom: 15px;
   }
+  .review {
+    margin-top: 140px;
+  }
+  .review__title {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .review__wrap {
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 30px;
+  }
+  .review__info {
+    margin-right: 0%;
+  }
+  .review__info-wrap {
+    margin-bottom: 25px;
+  }
+  .review__name {
+    font-size: 24px;
+  }
 }
 @media (min-width: 1920px) and (max-width: 3000px) {
   [class*=__container] {
@@ -1203,6 +1281,12 @@ div.swiper-pagination-fraction {
   }
   .location-gigs__wrap {
     row-gap: 40px;
+  }
+  .review {
+    margin-top: 90px;
+  }
+  .review__title {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1140px) {

@@ -1,0 +1,65 @@
+.review {
+    margin-top: 170px;
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__wrap {
+        display: flex;
+        column-gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    &__wrap--2 {
+        flex-direction: row-reverse;
+    }
+
+    &__decor {
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $text;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__pic-wrap {
+        
+        flex-basis: 50%;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 25%;
+        margin-right: 25%;
+    }
+
+
+    &__name {
+        font-family: $text-headings;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 111%;
+        color: $header5;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__place {
+        font-family: $body-text;
+        font-size: 17px;
+        line-height: 117%;
+        font-weight: 500;
+        color: $header5;
+    }
+}

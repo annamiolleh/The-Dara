@@ -96,6 +96,9 @@
 
     &__pic {
         margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0px; 
+        }
         img {
             display: block;
             width: 100%;

@@ -444,6 +444,31 @@
             font-size: 24px;
         }
     }
+
+    .footer {
+        margin-top: 140px;
+        margin-bottom: 80px;
+
+        &__container {
+            align-items: stretch;
+        }
+    }
+
+    .socials-footer {
+        &__wrap {
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: auto;
+            min-height: 100%;
+        }
+    }
+
+    .book-footer {
+        &__link {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 // -------------------------------The end of the 210 - 767 (mobile styles)----------------------------
 
@@ -767,6 +792,66 @@
             margin-bottom: 30px;
         }
     }
+
+    .footer {
+        margin-top: 90px;
+        margin-bottom: 20px;
+
+        &__container {
+            flex-direction: column;
+            // row-gap: 40px;
+    }
+}
+
+.logo-footer {
+    margin-bottom: 40px;
+}
+
+.socials-footer {
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    &__item {
+        margin-bottom: 0px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &--order {
+        order: 3;
+    }
+
+    &__ref {
+        display: none;
+    }
+}
+
+.book-footer {
+    margin-bottom: 25px;
+    &__link {
+        flex-direction: row;
+    }
+
+    &__item {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.ref-footer {
+    &--mobile {
+        display: block;
+        order: 4;
+        margin-top: 40px;
+    }
+}
+
 }
 
 @media screen and (min-width: 990px) and (max-width: 1140px){

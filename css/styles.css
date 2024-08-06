@@ -823,7 +823,7 @@ div.swiper-pagination-fraction {
   [class*=__container] {
     max-width: 608px;
   }
-  body__lock {
+  .body--lock {
     overflow: hidden;
   }
   .menu__list {

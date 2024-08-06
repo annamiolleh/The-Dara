@@ -5,11 +5,10 @@
         max-width: 608px;
     }
     
-    body {
-        &__lock {
+    .body {
+        &--lock {
             overflow: hidden;
-        }
-        
+        }    
     }
 
     .menu__list{
